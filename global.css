@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #191a1d;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    fill: #4b6cc1;
+}
+
+:root {
+    --animate-duration: 600ms;
+    --base-white: #fff;
+    --background-black: #191a1d;
+    --black222: #222;
+    --background-blue: #4b6cc1;
+    --light-grey: #ababab;
+    --grey: #5e5e5e;
+}
+
+.container {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    border-radius: 100px;
+    background: #4b6cc1;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn--small a {
+    padding: 22px 32px;
+    font-size: 1.375rem;
+}
+
+.button:hover {
+    transform: scale(1.075);
+    box-shadow: inset 0 0 0 2px #4b6cc1;
+    background: none;
+}
+
+.button a {
+    display: block;
+    padding: 20px 28px;
+    font-family: "Rubik","Arial",sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+@media (max-width: 1150px) {
+    .button a {
+        font-size: 1.625rem;
+        padding: 20px 28px;
+    }
+
+    .btn--small a {
+        font-size: 1.25rem;
+        padding: 20px 28px;
+    }
+}
+
+@media (max-width: 670px) {
+    .button a {
+        font-size: 1.25rem;
+        padding: 20px 26px;
+    }
+
+    .btn--small a {
+        font-size: 1rem;
+        padding: 16px 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .button a {
+        padding: 18px 24px;
+        font-size: 1rem;
+    }
+}
